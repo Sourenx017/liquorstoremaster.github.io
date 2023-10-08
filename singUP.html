@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <style>
+        body {
+            background-image: url(images/bg_2.jpg); /* Ruta de tu imagen de fondo */
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 400px;
+            padding: 20px;
+            background-color: rgba(128, 64, 0, 0.8); /* Color amaderado */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #804000; /* Color amaderado más oscuro */
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #a06020; /* Color amaderado claro al pasar el ratón */
+        }
+
+        .menu-button {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registro</h1>
+        <form action="#" method="post">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="text" name="correo" placeholder="Correo electrónico" required>
+            <input type="password" name="contrasena" placeholder="Contraseña" required>
+            <input type="submit" value="Registrarse">
+        </form>
+        <a class="menu-button" href="index.html">Volver al Menú</a>
+    </div>
+</body>
+</html>
